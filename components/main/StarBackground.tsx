@@ -1,18 +1,18 @@
-// components/main/StarBackground.tsx
 "use client";
 
 import React, { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
-// @ts-ignore - Use this if the module doesn't have type definitions
+// @ts-expect-error - Use this if the module doesn't have type definitions
 import * as random from "maath/random/dist/maath-random.esm";
+import * as THREE from "three";
 
 interface StarBackgroundProps {
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 const StarBackground: React.FC<StarBackgroundProps> = (props) => {
-    const ref = useRef<any>(null);
+    const ref = useRef<THREE.Points>(null!);
     const [sphere] = useState(() =>
         random.inSphere(new Float32Array(5000 * 3), { radius: 1.2 })
     );

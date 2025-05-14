@@ -17,10 +17,6 @@ const Footer = () => {
             <SiLeetcode />
             <span className="text-[15px]">LeetCode</span>
           </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition">
-            <RxInstagramLogo />
-            <span className="text-[15px]">Instagram</span>
-          </a>
           <a href="https://www.linkedin.com/in/jay-sharma-907887272/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition">
             <RxLinkedinLogo />
             <span className="text-[15px]">LinkedIn</span>
@@ -29,11 +25,6 @@ const Footer = () => {
             <RxLinkedinLogo />
             <span className="text-[15px]">GitHub</span>
           </a>
-        </div>
-
-        {/* Footer text */}
-        <div className="text-[14px] text-center text-gray-400">
-          &copy; WebChain Dev 2023 Inc. All rights reserved
         </div>
       </div>
     </div>

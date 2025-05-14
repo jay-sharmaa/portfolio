@@ -1,5 +1,5 @@
 import React from "react";
-import { RxInstagramLogo, RxLinkedinLogo } from "react-icons/rx";
+import { RxLinkedinLogo } from "react-icons/rx";
 import { SiKaggle, SiLeetcode } from "react-icons/si";
 
 const Footer = () => {

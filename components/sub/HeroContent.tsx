@@ -1,11 +1,10 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
-import { slideInFromLeft, slideInFromRight } from '@/utils/motion';
+import { slideInFromRight } from '@/utils/motion';
 import { Typewriter } from 'react-simple-typewriter';
 
 const HeroContent = () => {
-    const paragraph = `I'm an Android Developer with experience in Flutter, Native Android Development, and Machine Learning. Check out my projects and skills.`;
 
     return (
         <motion.div

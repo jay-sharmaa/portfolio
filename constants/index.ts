@@ -84,34 +84,32 @@ export const Socials = [
   {
     name: "Instagram",
     src: "/5296765_camera_instagram_instagram logo_icon.png",
-    link: "https://www.instagram.com/therock/?hl=en"
+    link: "https://www.instagram.com/___jay__sharma__/?hl=en"
   },
 ];
 
-
-
 export const Frontend_skill = [
   {
-    skill_name: "Html 5",
-    Image: "/html.png",
+    skill_name: "Cpp",
+    Image: "/cpp.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Css",
-    Image: "/css.png",
+    skill_name: "Python",
+    Image: "/py.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Java Script",
-    Image: "/js.png",
+    skill_name: "Java",
+    Image: "/java.webp",
     width: 65,
     height: 65,
   },
   {
-    skill_name: "Tailwind Css",
-    Image: "/tailwind.png",
+    skill_name: "Kotlin",
+    Image: "/kotlin.png",
     width: 80,
     height: 80,
   },
@@ -128,8 +126,8 @@ export const Frontend_skill = [
     height: 80,
   },
   {
-    skill_name: "Redux",
-    Image: "/redux.png",
+    skill_name: "Dart",
+    Image: "/dart.png",
     width: 80,
     height: 80,
   },
@@ -146,8 +144,8 @@ export const Frontend_skill = [
     height: 80,
   },
   {
-    skill_name: "Next js 13",
-    Image: "/next.png",
+    skill_name: "Java Script",
+    Image: "/js.png",
     width: 80,
     height: 80,
   },
@@ -155,14 +153,14 @@ export const Frontend_skill = [
 
 export const Backend_skill = [
   {
-    skill_name: "Node js",
-    Image: "/node-js.png",
+    skill_name: "SQL",
+    Image: "/sql.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Express js",
-    Image: "/express.png",
+    skill_name: "Supabase",
+    Image: "/supabase.png",
     width: 80,
     height: 80,
   },
@@ -206,16 +204,16 @@ export const Backend_skill = [
 
 export const Full_stack = [
   {
-    skill_name: "React Native",
-    Image: "/ReactNative .png",
-    width: 70,
-    height: 70,
+    skill_name: "Native Android",
+    Image: "/and.png",
+    width: 80,
+    height: 80,
   },
   {
-    skill_name: "Tauri",
-    Image: "/tauri.svg",
-    width: 70,
-    height: 70,
+    skill_name: "Flutter",
+    Image: "/f.png",
+    width: 80,
+    height: 80,
   },
   {
     skill_name: "Docker",
@@ -237,8 +235,8 @@ export const Full_stack = [
 
 export const Other_skill = [
   {
-    skill_name: "Go",
-    Image: "/go.png",
+    skill_name: "Pytorch",
+    Image: "/p.png",
     width: 60,
     height: 60,
   },

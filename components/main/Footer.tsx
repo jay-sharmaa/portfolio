@@ -1,13 +1,13 @@
 import React from "react";
 import { RxLinkedinLogo } from "react-icons/rx";
 import { SiKaggle, SiLeetcode } from "react-icons/si";
+import { FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <div className="w-full bg-transparent text-gray-200 shadow-lg p-[15px]">
       <div className="w-full flex flex-col items-center justify-center gap-4">
         
-        {/* Social links in a single row */}
         <div className="flex flex-row gap-8 items-center justify-center text-[18px]">
           <a href="https://www.kaggle.com/naivedatamodel" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition">
             <SiKaggle />
@@ -22,7 +22,7 @@ const Footer = () => {
             <span className="text-[15px]">LinkedIn</span>
           </a>
           <a href="https://github.com/jay-sharmaa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition">
-            <RxLinkedinLogo />
+            <FaGithub />
             <span className="text-[15px]">GitHub</span>
           </a>
         </div>

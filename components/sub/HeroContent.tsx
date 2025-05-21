@@ -10,7 +10,7 @@ const HeroContent = () => {
 
     const imageMap: { [key: string]: string } = {
         'Study Help': '/New Project.png',
-        'FitLite': '/fitlite.png',
+        'FitLite': '/Fitlite.png',
         'Virtual Vogue': '/VirtualVogue.png',
     };
 
@@ -57,9 +57,9 @@ const HeroContent = () => {
 
             <motion.div
                 variants={slideInFromRight(0.8)}
-                className="w-full lg:w-1/2 flex flex-col items-end lg:items-end"
+                className="w-full lg:w-1/2 flex flex-col items-start lg:items-start"
             >
-                <div className="w-full flex justify-end pr-2 sm:pr-8 mb-4">
+                <div className="w-full flex justify-start pl-2 sm:pl-4 mb-4">
                     <div className="flex flex-wrap sm:flex-nowrap gap-2 justify-end">
                         {['Study Help', 'FitLite', 'Virtual Vogue'].map((title) => (
                             <button

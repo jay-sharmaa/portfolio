@@ -65,11 +65,10 @@ const HeroContent = () => {
                             <button
                                 key={title}
                                 onClick={() => setSelectedTab(title)}
-                                className={`px-4 py-1 text-sm font-medium rounded-full transition duration-200 ${
-                                    selectedTab === title
+                                className={`px-4 py-1 text-sm font-medium rounded-full transition duration-200 ${selectedTab === title
                                         ? 'bg-white text-black'
                                         : 'bg-gray-700 text-white hover:bg-gray-600'
-                                }`}
+                                    }`}
                             >
                                 {title}
                             </button>
@@ -77,7 +76,7 @@ const HeroContent = () => {
                     </div>
                 </div>
 
-                {selectedTab === 'Study Help' ? (
+                {selectedTab === 'Study Help' && (
                     <a
                         href="https://appetize.io/embed/b_ihevdlvxqe6e3h7x7y7ouyfiaq"
                         target="_blank"
@@ -86,11 +85,25 @@ const HeroContent = () => {
                     >
                         {phoneImage}
                     </a>
-                ) : (
+                )}
+
+                {selectedTab === 'FitLite' && (
+                    <a
+                        href="https://appetize.io/embed/b_65yzgrf7u7swgiy4zdyiki3rke"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="transition-transform hover:scale-105 duration-300"
+                    >
+                        {phoneImage}
+                    </a>
+                )}
+
+                {selectedTab === 'Virtual Vogue' && (
                     <div className="cursor-not-allowed opacity-70">
                         {phoneImage}
                     </div>
                 )}
+
             </motion.div>
         </motion.div>
     );

@@ -11,7 +11,7 @@ const HeroContent = () => {
     const imageMap: { [key: string]: string } = {
         'Study Help': '/New Project.png',
         'FitLite': '/Fitlite.png',
-        'Virtual Vogue': '/VirtualVogue.png',
+        'PrepKit': '/prepkit.png',
     };
 
     const phoneImage = (
@@ -54,14 +54,33 @@ const HeroContent = () => {
                     />
                 </div>
             </div>
-
             <motion.div
                 variants={slideInFromRight(0.8)}
                 className="w-full lg:w-1/2 flex flex-col items-start lg:items-start"
             >
-                <div className="w-full flex justify-start pl-2 sm:pl-4 mb-4">
-                    <div className="flex flex-wrap sm:flex-nowrap gap-2 justify-end">
-                        {['Study Help', 'FitLite', 'Virtual Vogue'].map((title) => (
+                <div className="w-full flex flex-col items-start pl-2 sm:pl-4 mb-4 gap-3">
+                    <div className="flex items-center gap-2 bg-gray-800/50 text-gray-200 px-4 py-2 rounded-lg border border-gray-700 shadow-sm">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-4 w-4 text-yellow-400"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M13 16h-1v-4h-1m1-4h.01M12 20c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z"
+                            />
+                        </svg>
+                        <p className="text-sm">
+                            <strong>Run App On Web:</strong> Demo previews may not reflect full app capabilities.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-wrap sm:flex-nowrap gap-2">
+                        {['Study Help', 'FitLite', 'PrepKit'].map((title) => (
                             <button
                                 key={title}
                                 onClick={() => setSelectedTab(title)}
@@ -75,7 +94,6 @@ const HeroContent = () => {
                         ))}
                     </div>
                 </div>
-
                 {selectedTab === 'Study Help' && (
                     <a
                         href="https://appetize.io/embed/b_ihevdlvxqe6e3h7x7y7ouyfiaq"
@@ -98,7 +116,7 @@ const HeroContent = () => {
                     </a>
                 )}
 
-                {selectedTab === 'Virtual Vogue' && (
+                {selectedTab === 'PrepKit' && (
                     <div className="cursor-not-allowed opacity-70">
                         {phoneImage}
                     </div>

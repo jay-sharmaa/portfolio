@@ -97,58 +97,58 @@ const ProjectTable = () => {
             </tr>
           </thead>
           <tbody>
-  {loading ? (
-    <tr>
-      <td colSpan={4} className="py-6 px-4 text-center text-gray-400">
-        Loading projects...
-      </td>
-    </tr>
-  ) : error ? (
-    <tr>
-      <td colSpan={4} className="py-6 px-4 text-center text-red-500">
-        Error: {error}
-      </td>
-    </tr>
-  ) : projects.length === 0 ? (
-    <tr>
-      <td colSpan={4} className="py-6 px-4 text-center text-gray-500">
-        No projects found in README table.
-      </td>
-    </tr>
-  ) : (
-    projects.slice(0, 5).map(
-      ({ week, projectName, projectLink, descriptionLink, language }, index) => (
-        <tr
-          key={index}
-          className="border-t border-gray-800 hover:bg-[#1c1c1c] transition-colors"
-        >
-          <td className="py-3 px-4 text-gray-400">{week}</td>
-          <td className="py-3 px-4">
-            <a
-              href={projectLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-cyan-400 hover:underline"
-            >
-              {projectName}
-            </a>
-          </td>
-          <td className="py-3 px-4">
-            <a
-              href={descriptionLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-purple-400 hover:underline"
-            >
-              Description
-            </a>
-          </td>
-          <td className="py-3 px-4">{language}</td>
-        </tr>
-      )
-    )
-  )}
-</tbody>
+            {loading ? (
+              <tr>
+                <td colSpan={4} className="py-6 px-4 text-center text-gray-400">
+                  Loading projects...
+                </td>
+              </tr>
+            ) : error ? (
+              <tr>
+                <td colSpan={4} className="py-6 px-4 text-center text-red-500">
+                  Error: {error}
+                </td>
+              </tr>
+            ) : projects.length === 0 ? (
+              <tr>
+                <td colSpan={4} className="py-6 px-4 text-center text-gray-500">
+                  No projects found in README table.
+                </td>
+              </tr>
+            ) : (
+              projects.slice(0, 5).map(
+                ({ week, projectName, projectLink, descriptionLink, language }, index) => (
+                  <tr
+                    key={index}
+                    className="border-t border-gray-800 hover:bg-[#1c1c1c] transition-colors"
+                  >
+                    <td className="py-3 px-4 text-gray-400">{week}</td>
+                    <td className="py-3 px-4">
+                      <a
+                        href={projectLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-cyan-400 hover:underline"
+                      >
+                        {projectName}
+                      </a>
+                    </td>
+                    <td className="py-3 px-4">
+                      <a
+                        href={descriptionLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-purple-400 hover:underline"
+                      >
+                        Description
+                      </a>
+                    </td>
+                    <td className="py-3 px-4">{language}</td>
+                  </tr>
+                )
+              )
+            )}
+          </tbody>
 
         </table>
       </div>

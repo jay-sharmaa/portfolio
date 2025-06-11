@@ -26,8 +26,8 @@ const Navbar = () => {
 
         <div className="flex flex-row gap-5 items-center">
           <a
-            href="/JayResume1.pdf"
-            download
+            href="https://drive.google.com/file/d/1hXD426IS0Qp7VFpjF1GVz84yE2LhWaoV/view?usp=sharing"
+            target="_blank"
             className="hover:scale-105 transition-transform"
             title="Download Resume"
           >
@@ -38,7 +38,6 @@ const Navbar = () => {
               height={32}
             />
           </a>
-
           {Socials.map((social) => (
             <a
               key={social.name}
@@ -55,7 +54,6 @@ const Navbar = () => {
               />
             </a>
           ))}
-
           <a
         href="https://mail.google.com/mail/?view=cm&fs=1&to=sjaysharma00@gmail.com"
         target="_blank"
@@ -71,13 +69,8 @@ const Navbar = () => {
         />
       </a>
         </div>
-        
       </div>
-      
-
     </div>
-
-
   );
 };
 

@@ -84,7 +84,7 @@ export const Socials = [
   {
     name: "Instagram",
     src: "/5296765_camera_instagram_instagram logo_icon.png",
-    link: "https://www.instagram.com/___jay__sharma__/?hl=en"
+    link: "https://www.instagram.com/og_jaysharma/?hl=en"
   },
 ];
 

@@ -117,9 +117,14 @@ const HeroContent = () => {
                 )}
 
                 {selectedTab === 'PrepKit' && (
-                    <div className="cursor-not-allowed opacity-70">
+                    <a
+                        href="https://appetize.io/app/b_df5qo2sm4qnt6uxfxeuk7y3ogq"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="transition-transform hover:scale-105 duration-300"
+                    >
                         {phoneImage}
-                    </div>
+                    </a>
                 )}
 
             </motion.div>

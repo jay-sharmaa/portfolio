@@ -2,6 +2,7 @@ import Hero from "@/components/main/Hero";
 import Projects from "@/components/main/Projects";
 import ProjectTable from "@/components/main/ProjectTable";
 import Skills from "@/components/main/Skills";
+import DownloadLinks from "@/components/main/AppLinks";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Skills/>
         <Projects/>
         <ProjectTable/>
+        <DownloadLinks/>
       </div>
     </main>
   );

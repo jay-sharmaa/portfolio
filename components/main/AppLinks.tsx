@@ -20,7 +20,9 @@ const downloadStats: DownloadStat[] = [
 
 const DownloadStatsTable = () => {
   return (
-    <section className="w-full px-6 md:px-20 py-12">
+    <section 
+    id = "applinks"
+    className="w-full px-6 md:px-20 py-12">
       <h2 className="text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-8 text-center">
         Download Stats
       </h2>

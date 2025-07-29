@@ -21,6 +21,9 @@ const Navbar = () => {
             <a href="#projects" className="cursor-pointer">
               Projects
             </a>
+            <a href="#applinks" className="cursor-pointer">
+              App Downloads
+            </a>
           </div>
         </div>
 

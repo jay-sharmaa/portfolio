@@ -107,7 +107,7 @@ const HeroContent = () => {
 
                 {selectedTab === 'FitLite' && (
                     <a
-                        href="https://appetize.io/embed/b_65yzgrf7u7swgiy4zdyiki3rke"
+                        href="https://appetize.io/app/b_bvgp67hew2ffbp5ehhy6d7dff4"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="transition-transform hover:scale-105 duration-300"

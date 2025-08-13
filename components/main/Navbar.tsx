@@ -26,7 +26,7 @@ const Navbar = () => {
 
         <div className="flex flex-row gap-5 items-center">
           <a
-            href=""
+            href="https://drive.google.com/file/d/1uxaOa9PlDHHutzTd9kcph956VvxM4jH1/view?usp=drive_link"
             target="_blank"
             className="hover:scale-105 transition-transform"
             title="Download Resume"
